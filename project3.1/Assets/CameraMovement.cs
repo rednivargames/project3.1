@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	//	transform.position = new Vector3 (transform.position.x,transform.position.y,Player.position.z);
-		R2.velocity = new Vector3 (0f,0f,-Speed);
+		transform.position = new Vector3 (transform.position.x,transform.position.y,(Player.position.z+10));
+		//R2.velocity = new Vector3 (0f,0f,-Speed);
 	}
 }

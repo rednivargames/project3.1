@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BallMovement : MonoBehaviour {
 	public Rigidbody R2;
-	public WheelCollider BallCollider;
 	private int speed=5;
 	public bool Grounded;
 	public Transform CenterPoint;
@@ -20,7 +19,7 @@ public class BallMovement : MonoBehaviour {
 	void Update () {
 	//	Grounded = Physics.OverlapSphere(CenterPoint.position,Radius,Ground);
 	
-		R2.velocity = new Vector3 (0f,0f,-speed);
+	R2.velocity = new Vector3 (0f,0f,-speed);
 
 	}
 }
